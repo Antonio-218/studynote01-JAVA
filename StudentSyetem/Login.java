@@ -26,9 +26,11 @@ public class Login {
             } else if (i == 2) {// 注册入口
                 P.register();
             }
+
         }
     }
 }
+
 /**
  * 创建Person类，用于编写是否注册、登录、注销等操作的一系列代码。
  * 使用了map来实现账号与密码的一一对应关系，用tip的数值变化来确定是否有账号是否登录
@@ -39,6 +41,8 @@ public class Login {
 class Person {
     Map<String, String> Uer = new HashMap<String, String>();// Map"key-value”键值对"接口，HashMap是它的实现类
     int tip = 0;// 判定是否为登陆状态，0为未登陆，1为已有用户登陆；
+
+
     /**
      * Login方法判断账户是否登录，若已登陆则注销，若未登录
      *

@@ -9,23 +9,17 @@ public class Students {
      */
         private String id;//学号
         private String name;
-        private String classroom;
-        private String majorWeb;
-        private String majorJava;
-        private String majorComputer;
-
+        private String age;
+        private String major;//专业
 
         public Students() {//无参构造
             super();
         }
-        public Students(String id,String name,String classroom,String majorWeb,String majorJava,String majorComputer) {//带参构造
+        public Students(String id,String name,String age,String major) {//带参构造
             this.id=id;
             this.name=name;
-            this.classroom=classroom;
-            this.majorWeb=majorWeb;
-            this.majorJava=majorJava;
-            this.majorComputer=majorComputer;
-
+            this.age=age;
+            this.major=major;
         }
         public String getId() {
             return id;
@@ -39,28 +33,16 @@ public class Students {
         public void setName(String name) {
             this.name=name;
         }
-    public String getClassroom() {
-        return classroom;
+        public String getAge() {
+            return age;
+        }
+        public void setAge(String age) {
+            this.age=age;
+        }
+        public String getMajor() {
+            return major;
+        }
+        public void setMajor(String major) {
+            this.major=major;
+        }
     }
-    public void setClassroom(String classroom) {
-        this.classroom=classroom;
-    }
-    public String getMajorWeb() {
-        return majorWeb;
-    }
-    public void setMajorWeb(String majorWeb) {
-        this.majorWeb=majorWeb;
-    }
-    public String getMajorJava() {
-        return majorJava;
-    }
-    public void setMajorJava(String majorJava) {
-        this.majorJava=majorJava;
-    }
-    public String getMajorComputer() {
-        return majorComputer;
-    }
-    public void setMajorComputer(String majorComputer) {
-        this.majorComputer=majorComputer;
-    }
-}
